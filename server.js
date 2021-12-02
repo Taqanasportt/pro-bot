@@ -191,30 +191,30 @@ client.on("message", async message => {
 
  🌍**»__ Public Commands __ **
  
-\`${prefix}se - ${prefix}vote\`
-\`${prefix}avatar - ${prefix}day\`
-\`${prefix}uptime - ${prefix}ping\`
-\`${prefix}about - ${prefix}weather\`
-\`${prefix}listbots - ${prefix}roles\`
-\`${prefix}userRole - ${prefix}support\`
-\`${prefix}invite - ${prefix}listEmoji\`
-\`${prefix}report - ${prefix}ninvites\` 
-\`${prefix}perms - ${prefix}serverinfo\`
-\`${prefix}userinfo - ${prefix}server avatar\`
-\`${prefix}covid all - ${prefix}covid\` : **[Country]**
+\`+{prefix}se - +{prefix}vote\`
+\`+{prefix}avatar - +{prefix}day\`
+\`+{prefix}uptime - +{prefix}ping\`
+\`+{prefix}about - +{prefix}weather\`
+\`+{prefix}listbots - +{prefix}roles\`
+\`+{prefix}userRole - +{prefix}support\`
+\`+{prefix}invite - +{prefix}listEmoji\`
+\`+{prefix}report - +{prefix}ninvites\` 
+\`+{prefix}perms - +{prefix}serverinfo\`
+\`+{prefix}userinfo - +{prefix}server avatar\`
+\`${prefix}covid all - +{prefix}covid\` : **[Country]**
 
 ⚡**»__ Moderation __ **
 
-\`${prefix}hide - ${prefix}show\`
-\`${prefix}ban - ${prefix}unban \`
-\`${prefix}move - ${prefix}embed\`
-\`${prefix}kick - ${prefix}vkick\`
-\`${prefix}mute - ${prefix}unmute\`
-\`${prefix}lock - ${prefix}unlock\`
-\`${prefix}clear - ${prefix}slowmode\`
-\`${prefix}lockall - ${prefix}unlockall\`
-\`${prefix}ENrules - ${prefix}KRrules - ${prefix}ARrules\`
-\`${prefix}warn - ${prefix}warning - ${prefix}removewarn\`
+\`+{prefix}hide - &{prefix}show\`
+\`+{prefix}ban - +{prefix}unban \`
+\`+{prefix}move - +{prefix}embed\`
+\`+{prefix}kick - +{prefix}vkick\`
+\`+{prefix}mute - +{prefix}unmute\`
+\`+{prefix}lock - +{prefix}unlock\`
+\`+{prefix}clear - +{prefix}slowmode\`
+\`+{prefix}lockall - +{prefix}unlockall\`
+\`+{prefix}ENrules - +{prefix}KRrules - ${prefix}ARrules\`
+\`+{prefix}warn - +{prefix}warning - ${prefix}removewarn\`
     
       `);
     message.channel.send(help);
@@ -229,7 +229,7 @@ client.on("message", message => {
     if (message.author.bot) return;
     if (!message.guild)
       return message.reply("**:x: - This Command is only done on Servers**");
-    message.guild.fetchInvites().then(invites => {
+    message.guild.fetchInvites(https://discord.gg/brave1).then(invites => {
       
       let personalInvites = invites.filter(
         i => i.inviter.id === message.author.id
